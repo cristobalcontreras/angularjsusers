@@ -1,38 +1,37 @@
-# `angular-seed` — the seed for AngularJS apps
+# `angular-users` — the users for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
 
-The seed contains a sample AngularJS application and is preconfigured to install the AngularJS
+The users contains a sample AngularJS application and is preconfigured to install the AngularJS
 framework and a bunch of development and testing tools for instant web development gratification.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
-
+The users app doesn't do much, just shows how to wire two controllers and views together.
 
 ## Getting Started
 
-To get you started you can simply clone the `angular-seed` repository and install the dependencies:
+To get you started you can simply clone the `angular-users` repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the `angular-seed` repository. You can get git from [here][git].
+You need git to clone the `angular-users` repository. You can get git from [here][git].
 
-We also use a number of Node.js tools to initialize and test `angular-seed`. You must have Node.js
+We also use a number of Node.js tools to initialize and test `angular-users`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
 
-### Clone `angular-seed`
+### Clone `angular-users`
 
-Clone the `angular-seed` repository using git:
-
-```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
-```
-
-If you just want to start a new project without the `angular-seed` commit history then you can do:
+Clone the `angular-users` repository using git:
 
 ```
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
+git clone https://github.com/angular/angular-users.git
+cd angular-users
+```
+
+If you just want to start a new project without the `angular-users` commit history then you can do:
+
+```
+git clone --depth=1 https://github.com/angular/angular-users.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
@@ -42,8 +41,8 @@ The `depth=1` tells git to only pull down one commit worth of historical data.
 We have two kinds of dependencies in this project: tools and AngularJS framework code. The tools
 help us manage and test the application.
 
-* We get the tools we depend upon and the AngularJS code via `npm`, the [Node package manager][npm].
-* In order to run the end-to-end tests, you will also need to have the
+- We get the tools we depend upon and the AngularJS code via `npm`, the [Node package manager][npm].
+- In order to run the end-to-end tests, you will also need to have the
   [Java Development Kit (JDK)][jdk] installed on your machine. Check out the section on
   [end-to-end testing](#e2e-testing) for more info.
 
@@ -58,11 +57,11 @@ Behind the scenes this will also call `npm run copy-libs`, which copies the Angu
 other front end dependencies. After that, you should find out that you have two new directories in
 your project.
 
-* `node_modules` - contains the npm packages for the tools we need
-* `app/lib` - contains the AngularJS framework files and other front end dependencies
+- `node_modules` - contains the npm packages for the tools we need
+- `app/lib` - contains the AngularJS framework files and other front end dependencies
 
-*Note copying the AngularJS files from `node_modules` to `app/lib` makes it easier to serve the
-files by a web server.*
+_Note copying the AngularJS files from `node_modules` to `app/lib` makes it easier to serve the
+files by a web server._
 
 ### Run the Application
 
@@ -74,7 +73,6 @@ npm start
 ```
 
 Now browse to the app at [`localhost:8000/index.html`][local-app-url].
-
 
 ## Directory Layout
 
@@ -108,18 +106,17 @@ package.json          --> Node.js specific metadata, including development tools
 package-lock.json     --> Npm specific metadata, including versions of installed development tools dependencies
 ```
 
-
 ## Testing
 
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
+There are two kinds of tests in the `angular-users` application: Unit tests and end-to-end tests.
 
 ### Running Unit Tests
 
-The `angular-seed` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
+The `angular-users` app comes preconfigured with unit tests. These are written in [Jasmine][jasmine],
 which we run with the [Karma][karma] test runner. We provide a Karma configuration file to run them.
 
-* The configuration is found at `karma.conf.js`.
-* The unit tests are found next to the code they are testing and have a `.spec.js` suffix (e.g.
+- The configuration is found at `karma.conf.js`.
+- The unit tests are found next to the code they are testing and have a `.spec.js` suffix (e.g.
   `view1.spec.js`).
 
 The easiest way to run the unit tests is to use the supplied npm script:
@@ -142,16 +139,16 @@ predefined script to do this:
 npm run test-single-run
 ```
 
-
 <a name="e2e-testing"></a>
+
 ### Running End-to-End Tests
 
-The `angular-seed` app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
+The `angular-users` app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
 are run with the [Protractor][protractor] End-to-End test runner. It uses native events and has
 special features for AngularJS applications.
 
-* The configuration is found at `e2e-tests/protractor-conf.js`.
-* The end-to-end tests are found in `e2e-tests/scenarios.js`.
+- The configuration is found at `e2e-tests/protractor-conf.js`.
+- The end-to-end tests are found in `e2e-tests/scenarios.js`.
 
 Protractor simulates interaction with our web app and verifies that the application responds
 correctly. Therefore, our web server needs to be serving up the application, so that Protractor can
@@ -164,7 +161,7 @@ npm start
 ```
 
 In addition, since Protractor is built upon WebDriver, we need to ensure that it is installed and
-up-to-date. The `angular-seed` project is configured to do this automatically before running the
+up-to-date. The `angular-users` project is configured to do this automatically before running the
 end-to-end tests, so you don't need to worry about it. If you want to manually update the WebDriver,
 you can run:
 
@@ -189,7 +186,6 @@ the [Java Development Kit (JDK)][jdk] to be installed on your local machine. Che
 
 If JDK is not already installed, you can download it [here][jdk-download].
 
-
 ## Updating AngularJS and other dependencies
 
 Since the AngularJS framework library code and tools are acquired through package managers (e.g.
@@ -205,10 +201,9 @@ versions that match the version ranges specified in the `package.json` file.
 If you want to update a dependency to a version newer than what the specificed range would permit,
 you can change the version range in `package.json` and then run `npm run update-deps` as usual.
 
-
 ## Loading AngularJS Asynchronously
 
-The `angular-seed` project supports loading the framework and application scripts asynchronously.
+The `angular-users` project supports loading the framework and application scripts asynchronously.
 The special `index-async.html` is designed to support this style of loading. For it to work you must
 inject a piece of AngularJS JavaScript into the HTML page. The project has a predefined script to help
 do this:
@@ -220,7 +215,6 @@ npm run update-index-async
 This will copy the contents of the `angular-loader.js` library file into the `index-async.html`
 page. You can run this every time you update the version of AngularJS that you are using.
 
-
 ## Serving the Application Files
 
 While AngularJS is client-side-only technology and it is possible to create AngularJS web apps that
@@ -231,7 +225,7 @@ etc to function properly when an HTML page is opened via the `file://` scheme in
 
 ### Running the App during Development
 
-The `angular-seed` project comes preconfigured with a local development web server. It is a Node.js
+The `angular-users` project comes preconfigured with a local development web server. It is a Node.js
 tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
 choose to install the tool globally:
 
@@ -262,24 +256,21 @@ out what is the best way to host the static files to comply with the same origin
 applicable. Usually this is done by hosting the files by the backend server or through
 reverse-proxying the backend server(s) and web server(s).
 
-
 ## Continuous Integration
 
 ### Travis CI
 
 [Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits to
-your repository and execute scripts such as building the app or running tests. The `angular-seed`
+your repository and execute scripts such as building the app or running tests. The `angular-users`
 project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
 tests when you push to GitHub.
 
 You will need to enable the integration between Travis and GitHub. See the
 [Travis website][travis-docs] for instructions on how to do this.
 
-
 ## Contact
 
 For more information on AngularJS please check out [angularjs.org][angularjs].
-
 
 [angularjs]: https://angularjs.org/
 [git]: https://git-scm.com/
